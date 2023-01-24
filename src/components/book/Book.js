@@ -1,5 +1,6 @@
 import Author from '../author/Author';
 import './Book.css';
+import { Link } from 'react-router-dom';
 
 function Book({
   book: { title, total_pages: totalPages, rating, isbn, published_date: publishedDate, authors },
@@ -26,3 +27,4 @@ function Book({
 }
 
 export default Book;
+//look at how to do this page/ask for help when i come back to it
