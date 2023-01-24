@@ -9,6 +9,7 @@ function App() {
   // TODO: Add routes to books & views
   return (
     <>
+      <h1>Library Catalog</h1>
       <Switch>
         <Route exact path="/books" component={BookList} />
         <Route exact path="/books/:id" component={BookDetail} />
