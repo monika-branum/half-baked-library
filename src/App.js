@@ -1,15 +1,18 @@
 import BookList from './components/book/BookList';
 import './App.css';
-import Main from './components/main/Main.js';
+import Main from './components/Main.js';
 import { Switch, Route } from 'react-router-dom';
+
+import BookDetail from './components/book/BookDetail.js';
 
 function App() {
   // TODO: Add routes to books & views
   return (
     <>
       <Switch>
-        <Route path="/books" component={BookList} />
-        <Route path="/" component={Main} />
+        <Route exact path="/books" component={BookList} />
+        <Route exact path="/books/:id" component={BookDetail} />
+        <Route exact path="/" component={Main} />
       </Switch>
     </>
   );
